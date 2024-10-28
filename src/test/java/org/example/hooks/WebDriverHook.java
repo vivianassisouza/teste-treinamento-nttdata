@@ -16,7 +16,7 @@ public class WebDriverHook {
         this.webDriverService = webDriverService;
     }
 
-    @Before("@selenium")
+    @Before
     public void setup() {
         webDriverService.setup();
     }
@@ -27,8 +27,9 @@ public class WebDriverHook {
         scenario.attach(ss, "image/png", "evidencia.png");
     }
 
-    @After("@selenium")
+    @After
     public void tearDown() {
         webDriverService.webDriver().quit();
+
     }
 }

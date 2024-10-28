@@ -11,17 +11,20 @@ public class GoogleHomePage extends BasePage {
         super(webDriverService);
     }
 
-    @FindBy(css = "[type=search]")
+    @FindBy(css = "[title='Pesquisar']")
     private WebElement searchBar;
 
-    public void navigateToGoogle() {
-
+    public void navegarParaGoogleHomePage() {
         webDriverService.webDriver().navigate().to(
                 "https://google.com.br");
     }
 
-    public void search(String text) {
+    public void digitarTextoNaBarraDeBusca(String text) {
         searchBar.sendKeys(text);
+    }
+
+    public void pressionarEnter(){
         searchBar.sendKeys(Keys.ENTER);
     }
+
 }

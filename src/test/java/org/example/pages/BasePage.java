@@ -12,4 +12,5 @@ public class BasePage {
         this.webDriverService = webDriverService;
         PageFactory.initElements(webDriverService.webDriver(), this);
     }
+
 }
