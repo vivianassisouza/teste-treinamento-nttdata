@@ -17,8 +17,14 @@ public class WebDriverHook {
     }
 
     @Before
-    public void setup() {
-        webDriverService.setup();
+    public void setup(Scenario scenario) {
+        String browser = "chrome"; // Padrão
+        if (scenario.getSourceTagNames().contains("@firefox")) {
+            browser = "firefox";
+        } else if (scenario.getSourceTagNames().contains("@edge")) {
+            browser = "edge";
+        }
+        webDriverService.setup(browser);
     }
 
     @AfterStep
