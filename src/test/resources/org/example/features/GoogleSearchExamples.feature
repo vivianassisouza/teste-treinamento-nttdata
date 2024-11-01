@@ -1,9 +1,7 @@
 #language: pt
 #encoding: utf-8
 
-@teste # Tag para identificar a qual conjunto de execução esse teste pertence
-# Para rodar os testes com essa tag, pode-se usar o comando -> mvn test -Dcucumber.filter.tags="@teste"
-
+@teste
 Funcionalidade: Busca no Google
   Como usuário do site de busca
   Eu desejo buscar por palavras
