@@ -25,7 +25,7 @@ Funcionalidade: Busca no Google
     Então encontro resultados sobre "gato"
 
   @firefox
-  Cenário: Buscar um leão no Google
+  Cenário: Buscar um abacaxi no Google
     Quando busco por "abacaxi"
     E pressiono Enter para buscar
     Então encontro resultados sobre "abacaxi"
