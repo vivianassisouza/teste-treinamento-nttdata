@@ -10,7 +10,7 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <junit.version>RELEASE</junit.version> <!-- Versão do JUnit -->
+        <junit.version>5.9.3</junit.version> <!-- VARIÁVEIS PARA O POM -->
     </properties>
 
     <dependencyManagement>
